@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = +prompt("moi ban nhap so dien")
+  let ketqua;
+  if (a>0 && a<50 ){
+    ketqua = a*1678
+    alert(ketqua)
+  } else if (a>50 &&a<=100){
+    ketqua = (50*1678) + (a-50)*1734
+    alert(ketqua)
+  }else if(a<100&&a<201){
+    ketqua = (50*1678)+(50*1734)+(a-100)*2014
+    alert(ketqua)
+  }
+</script>
+</body>
+</html>

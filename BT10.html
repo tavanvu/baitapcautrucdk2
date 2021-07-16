@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  a = +prompt("thu nhâp 1 năm của bạn là :(đv:VNĐ")
+    let tienthue;
+    if (a>0&&a<60000000){
+        tienthue = a*0.05
+        alert(tienthue+"đây la tiền thuế của bạn")
+    }else if (a>60000000&&a<=120000000){
+        tienthue = a*0.1
+        alert(tienthue+"day la tien thue cua ban")
+    }else if (a>120000000&&a<216000000){
+        tienthue = a*0.15
+        alert(tienthue+"day la tien thue cua ban")
+    }else {
+        tienthue = a * 0.35
+        alert(tienthue)
+    }
+</script>
+</body>
+</html>
