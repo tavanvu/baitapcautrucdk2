@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="haha">
+<p id="hehe"></p>
+<input type="button" onclick="hihi()" value="chuyển">
+<select>
+    <option>footandmeet</option>
+    <option>meetandfoot</option>
+</select>
+
+<script>
+    function footandmeet(foot) {
+        let meet = foot * 0.035
+        return meet
+    }
+
+    function meetandfoot(meet) {
+        let foot = meet * 3.305
+        return foot
+    }
+
+    function hihi() {
+        let a = document.getElementById("haha").value
+        document.getElementById("haha").innerHTML = footandmeet(a)
+        document.getElementById("hehe").innerHTML = meetandfoot(a)
+    }
+</script>
+</body>
+</html>
